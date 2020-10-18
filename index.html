@@ -2,12 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>forgit</title>
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Feel the Burn</title>
 </head>
-<body>
-    <h1> try to push it on git</h1>
+<link rel="stylesheet"href="css\style.css">
+<style>
+    /*CSS Reset*/
+    body{
+        margin:0px;
+        padding:0px;
+        height:0cm;
+        background-color:black ;
+    }
+    .left{
+        display:inline-block;
+        /* border:10px solid red; */
+       position:absolute;
+        top:20px;
+        left: 44px;
+    }
+    .mid{
+        display: block;
+        width:33%;
+        margin: 20px auto;
+        /* border:10px solid green; */
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vel quos deserunt illum ab, perspiciatis necessitatibus, fuga amet impedit itaque omnis. Nobis tempora neque aspernatur ex similique in labore obcaecati facilis dicta. Molestiae tempore earum laboriosam libero. Perferendis in obcaecati aliquam tempore non aperiam perspiciatis, delectus quidem provident earum autem animi! Quasi sint modi hic enim inventore laudantium nihil rem eum provident asperiores dolores delectus maiores doloribus, esse voluptatum, voluptas molestias! Temporibus voluptate sunt blanditiis eveniet cum dolor excepturi ea, magni quo esse hic quidem quis quaerat deleniti at accusamus quia molestias, provident amet laborum, ecessitatibus voluptatibus! Dignissimos, eligendi aut.</p>
+    }
+    .right{
+        position:absolute;
+        right: 44px;
+        top:20px;
+        display: inline-block;
+        /* border:12px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color : green;
+        text-decoration: none;
+        padding:34px 23px;
+        
+    }
+    .navbar li a.hover{
+        text-decoration: underline;
+        color: gray;
+
+    }
+    .left img{
+        width: 100px;
+        
+
+    }
+    .left div{
+        text-align: center;
+        font-size: 15px;
+
+    }
+    .btn{
+        margin:0px 9px;
+        color:red;
+        padding:4px 14px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        font-size:20px;
+        cursor: pointer;
+
+    }
+    .btn.hover{
+        background-color:rgb(31,30,30);
+        
+
+    }
+    .container{
+        border:2px solid blue;
+        border-radius: 28px;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%
+        
+
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 75px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin:20px auto;
+    }
+    
+</style>
+
+<body-background="C:\Users\user1\Dextop\project gym\image\bg.jpg">
+    
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/Vertical-Icons_Artboard-21-400x250.png">
+            <div>
+                Feel The Burn
+            </div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join the best Gym of Agra now
+        </h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your name">
+                
+            </div>
+           <div class="form-group">
+                <input type="text"name="" placeholder="Enter Your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Summit</button>
+        </form>
+     </div>
+
 </body>
 </html>
